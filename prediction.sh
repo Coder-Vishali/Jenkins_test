@@ -1,1 +1,2 @@
-python main.py 0.3 0.61
+python main.py 0.3 0.7
+mlflow ui
