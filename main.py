@@ -16,9 +16,6 @@ import logging
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
 
-mlflow.set_tracking_uri("http://localhost:5000")
-mlflow.set_experiment("wine-quality-test")
-
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
     mae = mean_absolute_error(actual, pred)
